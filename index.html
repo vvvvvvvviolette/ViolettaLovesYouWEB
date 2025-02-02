@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Виолетта Стихотворкина">
+    <meta name="description" content="Violetta loves you, but nobody loves her">
+
+    <title>Violetta Loves You</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <meta property="og:title" content="Violetta Loves You">
+    <meta property="og:description" content="Violetta loves you, but nobody loves her">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://violettalovesyou.fun">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <img src="data/images/jumpscare_1.jpg" alt="tchk">
+    <audio class="audio" src="data/audio/noise.wav" preload></audio>
+    <audio class="audio" src="data/audio/tone.wav" preload></audio>
+    <div class="content">
+        <h1>ViolettaLovesYou</h1>
+        <p>Of words that you can slide around some websites and fight about. Meanings what your lifes without, surf until youre wiping out.</p>
+        <p>victims of psychotronic terrorism, especially in the reconstruction phase, are in a state of psychosis and often cannot reason adequately at all. psychosis is a consequence of purposeful work.</p>
+        <p>For search engines for psyterrorists you will need: a sensor, a compass, sodium amytal in ampoules or scopalamine in ampoules or pills, a drink for a psyterorist needs to be divided with vodka or two, caffeine is better in ampoules so that you can wake up after receiving it after a while will be more honest</p>
+        <p>stories about psychotronic torture are a psychological operation to discredit victims</p>
+        <p>psychosis - is a consequence of purposeful work with information overload, which is only possible online.</p>
+        <p>Believe, all those who have become victims of electronic harassment, who have suffered in their hopelessness and helplessness, that for every iota of suffering caused to you, your executioners will not pay because they never existed.</p>
+        <p>Psychotronic torture - a symptom of schizophrenia and an excuse for the disease</p>
+        <p>victims of psyops are operators who have a negative impact on people nearby</p>
+        <p>an untested theory that when a person is suffering, they breathe more quickly, which releases more carbon into the atmosphere.</p>
+        <p>there is a whole tendency and repeating pattern among different people who do not know each other.</p>
+        <p>when burned, they will settle as microplastics inside the lungs.</p>
+        <p>The situation is similar: information is missing, misinformed and compromised</p>
+        <p>When there is an information overload, need to start a reboot.</p>
+        <p>bad news is that what you are experiencing and feeling is real and everything has a reason. but is that there is no real organization or even organized activity.</p>
+        <p>thoughts about psychotronic attacks can also be an irritation caused by a neurological disorder.</p>
+        <p>all government conspiracy theories on internet are psyops</p>
+        <p>consuming information from different sources leads you to rapid overload</p>
+        <p>Voices in the head are a sign of mental illness. They just like to select sick people for experiments to make it easier to discredit them.</p>
+        <p>What is your current situation? Are you experiencing a negative impact?</p>
+        <p>victims of attacks are the operators who do not allow others to live in peace.</p>
+    </div>
+    <style>
+        @keyframes epilepsy-bg {
+            from {
+                background-color: #000000;
+            }
+
+            to {
+                background-color: #ffffff;
+            }
+        }
+
+        @keyframes epilepsy-img {
+            from {
+                filter: invert(0%);
+            }
+
+            to {
+                filter: invert(100%);
+            }
+        }
+
+        @font-face {
+            font-family: "Shlop-Regular";
+            src: url("fonts/Shlop-Regular.otf");
+        }
+
+        @font-face {
+            font-family: "Unutterable-Regular";
+            src: url("fonts/Unutterable-Regular.otf");
+        }
+
+        body {
+            overflow: hidden;
+            animation: epilepsy-bg .1s linear infinite;
+        }
+
+        img {
+            animation: epilepsy-img .1s linear infinite;
+            position: absolute;
+            width: 25vw;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #131313;
+        }
+
+        h1 {
+            font-family: "Shlop-Regular", Arial, Helvetica, sans-serif;
+            font-size: 6vw;
+            position: absolute;
+            transition: transform .6s ease-in-out;
+            color: #c70000;
+            text-shadow: 0.2vw 0.2vw #bcbcbc;
+            z-index: 1;
+        }
+
+        p {
+            font-family: "Unutterable-Regular", Arial, Helvetica, sans-serif;
+            font-size: 2vw;
+            position: absolute;
+            transition: transform 1s ease-in-out;
+            width: 28vw;
+            color: #bcbcbc;
+            z-index: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const h1Elements = document.querySelectorAll("h1");
+            const pElements = document.querySelectorAll("p");
+            const imgElements = document.querySelectorAll("img");
+            const textElements = document.querySelectorAll("h1, p");
+            const audioElements = document.querySelectorAll("audio");
+            const content = document.querySelector(".content");
+
+            const SCALE_MIN = 0.4;
+            const SCALE_MAX = 1;
+
+            function getRandomPositionFor(element) {
+                const screenWidth = window.innerWidth;
+                const screenHeight = window.innerHeight;
+                const x = Math.random() * (screenWidth - element.offsetWidth);
+                const y = Math.random() * (screenHeight - element.offsetHeight);
+
+                return { x, y };
+            }
+
+            function getRandomScale() {
+                return Math.random() * (SCALE_MAX - SCALE_MIN) + SCALE_MIN;
+            }
+
+            function moveAndScaleElements(elements) {
+                elements.forEach((element) => {
+                    const { x, y } = getRandomPositionFor(element);
+                    const scale = getRandomScale();
+
+                    element.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+                });
+            }
+
+            function startAnimation() {
+                setInterval(() => {
+                    moveAndScaleElements(h1Elements);
+                }, 600);
+
+                setInterval(() => {
+                    moveAndScaleElements(pElements);
+                }, 1000);
+
+                setInterval(() => {
+                    moveAndScaleElements(imgElements);
+                }, 200);
+            }
+
+            textElements.forEach((textElement) => {
+                textElement.addEventListener("click", () => {
+                    if (content) {
+                        content.hidden = true;
+
+                        audioElements.forEach((audio) => {
+                            audio.play();
+                        });
+
+                        window.onbeforeunload = () => 1;
+                    }
+                });
+            });
+
+            moveAndScaleElements(h1Elements);
+            moveAndScaleElements(pElements);
+            moveAndScaleElements(imgElements);
+
+            startAnimation();
+        });
+    </script>
+</body>
+</html>
